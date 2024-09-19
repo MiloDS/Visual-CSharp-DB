@@ -1,0 +1,31 @@
+C:\Users\Usuario1\Desktop\Nueva carpeta\Visual C#  + DB\Visual C#  + DB\bin\Debug\Visual C#  + DB.exe.config
+C:\Users\Usuario1\Desktop\Nueva carpeta\Visual C#  + DB\Visual C#  + DB\bin\Debug\Visual C#  + DB.exe
+C:\Users\Usuario1\Desktop\Nueva carpeta\Visual C#  + DB\Visual C#  + DB\bin\Debug\Visual C#  + DB.pdb
+C:\Users\Usuario1\Desktop\Nueva carpeta\Visual C#  + DB\Visual C#  + DB\obj\Debug\Visual C#  + DB.csproj.AssemblyReference.cache
+C:\Users\Usuario1\Desktop\Nueva carpeta\Visual C#  + DB\Visual C#  + DB\obj\Debug\Visual_C_____DB.Form1.resources
+C:\Users\Usuario1\Desktop\Nueva carpeta\Visual C#  + DB\Visual C#  + DB\obj\Debug\Visual_C_____DB.Properties.Resources.resources
+C:\Users\Usuario1\Desktop\Nueva carpeta\Visual C#  + DB\Visual C#  + DB\obj\Debug\Visual C#  + DB.csproj.GenerateResource.cache
+C:\Users\Usuario1\Desktop\Nueva carpeta\Visual C#  + DB\Visual C#  + DB\obj\Debug\Visual C#  + DB.csproj.CoreCompileInputs.cache
+C:\Users\Usuario1\Desktop\Nueva carpeta\Visual C#  + DB\Visual C#  + DB\obj\Debug\Visual C#  + DB.exe
+C:\Users\Usuario1\Desktop\Nueva carpeta\Visual C#  + DB\Visual C#  + DB\obj\Debug\Visual C#  + DB.pdb
+C:\Users\Usuario1\Desktop\Nueva carpeta\Visual C#  + DB\Visual C#  + DB\obj\Debug\Visual_C_____DB.frmCRUD.resources
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\obj\Debug\Visual C#  + DB.csproj.AssemblyReference.cache
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\obj\Debug\Visual C#  + DB.exe
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\obj\Debug\Visual C#  + DB.pdb
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\bin\Debug\Visual C#  + DB.exe.config
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\bin\Debug\Visual C#  + DB.exe
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\bin\Debug\Visual C#  + DB.pdb
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\obj\Debug\Visual_C_____DB.Form1.resources
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\obj\Debug\Visual_C_____DB.frmCRUD.resources
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\obj\Debug\Visual_C_____DB.Properties.Resources.resources
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\obj\Debug\Visual C#  + DB.csproj.GenerateResource.cache
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\obj\Debug\Visual C#  + DB.csproj.CoreCompileInputs.cache
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\bin\Debug\EntityFramework.dll
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\bin\Debug\System.Data.SQLite.dll
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\bin\Debug\EntityFramework.xml
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\bin\Debug\System.Data.SQLite.xml
+C:\Users\Mukkano\Downloads\Visual C#  + DB\Visual C#  + DB\obj\Debug\Visual C.9CF1ED0A.Up2Date
