@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//Alexander Vargas Mejia
+//18-09-2024
+//visual C# + DB
 
 namespace Visual_C_____DB
 {
