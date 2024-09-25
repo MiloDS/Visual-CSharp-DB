@@ -14,12 +14,12 @@ namespace Visual_C_____DB
 {
     public partial class frmCRUD : Form
     {
-        SQLiteConnection connection;
+        SQLiteConnection objConnection;
         public frmCRUD()
         {
             InitializeComponent();
-            string connectionString = @"Data Source=|DataDirectory|\miBaseDeDatos.db;";
-            connection = new SQLiteConnection(connectionString);
+            string lsConnectionString = @"Data Source=|DataDirectory|\miBaseDeDatos.db;";
+            objConnection = new SQLiteConnection(lsConnectionString);
         }
         
         private void frmCRUD_FormClosed(object sender, FormClosedEventArgs e)
@@ -34,17 +34,17 @@ namespace Visual_C_____DB
 
             try
             {
-                connection.Open();
+                objConnection.Open();
 
-                SQLiteCommand command = new SQLiteCommand();
-                command.Connection = connection;
-                command.CommandText = "INSERT INTO tblEstudiantes (ID,Nombre,Edad,Semestre) VALUES (@ID, @Nombre, @Edad, @Semestre)";
-                command.Parameters.AddWithValue("@ID", txtID.Text);
-                command.Parameters.AddWithValue("@Nombre", txtNombre.Text);
-                command.Parameters.AddWithValue("@Edad", txtEdad.Text);
-                command.Parameters.AddWithValue("@Semestre", txtSemestre.Text);
-                command.ExecuteNonQuery();
-                connection.Close();
+                SQLiteCommand objCommand = new SQLiteCommand();
+                objCommand.Connection = connection;
+                objCommand.CommandText = "INSERT INTO tblEstudiantes (ID,Nombre,Edad,Semestre) VALUES (@ID, @Nombre, @Edad, @Semestre)";
+                objCommand.Parameters.AddWithValue("@ID", txtID.Text);
+                objCommand.Parameters.AddWithValue("@Nombre", txtNombre.Text);
+                objCommand.Parameters.AddWithValue("@Edad", txtEdad.Text);
+                objCommand.Parameters.AddWithValue("@Semestre", txtSemestre.Text);
+                objCommand.ExecuteNonQuery();
+                objConnection.Close();
                 MessageBox.Show("Datos insertados correctamente.");
             }
             catch (Exception ex)
@@ -53,8 +53,8 @@ namespace Visual_C_____DB
             }
             finally
             {
-                if(connection.State == ConnectionState.Open)
-                    connection.Close();
+                if(objConnection.State == ConnectionState.Open)
+                    objConnection.Close();
             }
             
 
@@ -64,9 +64,9 @@ namespace Visual_C_____DB
         {
             try
             {
-                connection.Open();
+                objConnection.Open();
                 MessageBox.Show("Conexion Establecida.");
-                connection.Close();
+                objConnection.Close();
             }
             catch (Exception) { throw; }
         }
@@ -75,16 +75,16 @@ namespace Visual_C_____DB
         {                       
             try
             {
-                connection.Open();
-                SQLiteCommand command = new SQLiteCommand();
-                command.Connection = connection;
-                command.CommandText = "SELECT * FROM tblEstudiantes";
-                SQLiteDataAdapter adapter = new SQLiteDataAdapter(command);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
+                objConnection.Open();
+                SQLiteCommand objCommand = new SQLiteCommand();
+                objCommand.Connection = objConnection;
+                objCommand.CommandText = "SELECT * FROM tblEstudiantes";
+                SQLiteDataAdapter objAdapter = new SQLiteDataAdapter(objCommand);
+                DataTable objDt = new DataTable();
+                objAdapter.Fill(objDt);
                 DataGridView dgvEstudiantes = new DataGridView() 
                 { 
-                    DataSource = dt,
+                    DataSource = objDt,
                     Dock = DockStyle.Fill,
                     AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
                 };
@@ -98,7 +98,7 @@ namespace Visual_C_____DB
                 frmGridForm.Controls.Add(dgvEstudiantes);
                 frmGridForm.Show();
                 
-                connection.Close();
+                objConnection.Close();
             }
             catch(Exception ex)
             {
@@ -110,17 +110,17 @@ namespace Visual_C_____DB
         {
             try
             {
-                connection.Open();
-                SQLiteCommand command = new SQLiteCommand();
-                command.Connection = connection;                
-                command.CommandText = "UPDATE tblEstudiantes SET Nombre = @Nombre, Edad = @Edad, Semestre = @Semestre WHERE ID = @ID";
-                command.Parameters.AddWithValue("@ID", txtID.Text);
-                command.Parameters.AddWithValue("@Nombre", txtNombre.Text);
-                command.Parameters.AddWithValue("@Edad", txtEdad.Text);
-                command.Parameters.AddWithValue("@Semestre", txtSemestre.Text);
+                objConnection.Open();
+                SQLiteCommand objCommand = new SQLiteCommand();
+                objCommand.Connection = objConnection;                
+                objCommand.CommandText = "UPDATE tblEstudiantes SET Nombre = @Nombre, Edad = @Edad, Semestre = @Semestre WHERE ID = @ID";
+                objCommand.Parameters.AddWithValue("@ID", txtID.Text);
+                objCommand.Parameters.AddWithValue("@Nombre", txtNombre.Text);
+                objCommand.Parameters.AddWithValue("@Edad", txtEdad.Text);
+                objCommand.Parameters.AddWithValue("@Semestre", txtSemestre.Text);
 
-                int rowsAffected = command.ExecuteNonQuery();
-                if (rowsAffected > 0)
+                int lnRowsAffected = objCommand.ExecuteNonQuery();
+                if (lnRowsAffected > 0)
                 {
                     MessageBox.Show("Datos actualizados correctamente.");
                 }
@@ -128,7 +128,7 @@ namespace Visual_C_____DB
                 {
                     MessageBox.Show("No se encontró el registro con el ID proporcionado.");
                 }
-                connection.Close();
+                objConnection.Close();
             }
             catch (Exception ex)
             {
@@ -140,14 +140,14 @@ namespace Visual_C_____DB
         {
             try
             {
-                connection.Open();
-                SQLiteCommand command = new SQLiteCommand();
-                command.Connection = connection;
-                command.CommandText = "DELETE FROM tblEstudiantes WHERE ID = @ID";
-                command.Parameters.AddWithValue("@ID",txtID.Text);
+                objConnection.Open();
+                SQLiteCommand objCommand = new SQLiteCommand();
+                objCommand.Connection = objConnection;
+                objCommand.CommandText = "DELETE FROM tblEstudiantes WHERE ID = @ID";
+                objCommand.Parameters.AddWithValue("@ID",txtID.Text);
 
-                int rowAffected = command.ExecuteNonQuery();
-                if (rowAffected > 0)
+                int lnRowAffected = objCommand.ExecuteNonQuery();
+                if (lnRowAffected > 0)
                 {
                     MessageBox.Show("Datos eliminados correctamente.");
                 }
@@ -155,7 +155,7 @@ namespace Visual_C_____DB
                 {
                     MessageBox.Show("No se encontro el registro con el ID proporcionado.");
                 }
-                connection.Close();
+                objConnection.Close();
             }
             catch(Exception ex)
             {
